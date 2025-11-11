@@ -7,17 +7,19 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px 0;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .todo-app {
   background-color: #b39a84;
   padding: 20px;
   border-radius: 10px;
-  width: 400px;
-  max-width: 90%;
+  width: 100%;
+  max-width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -32,18 +34,15 @@ h1 {
   margin-bottom: 10px;
 }
 
-
-/* 並び替えボタン背景 */
 .sort-btn {
   width: auto;
   padding: 8px 15px;
   font-size: 14px;
-  background-color: #0a1e54; 
+  background-color: #0a1e54;
 }
 
-/* 並び替えボタン触った時 */
 .sort-btn:hover {
-  background-color: #943c3c;
+  background-color: #9f2525;
 }
 
 ul {
@@ -54,7 +53,6 @@ ul {
   margin-bottom: 20px;
 }
 
-/* 保存済み日記一覧 */
 li {
   background-color: #ffffff;
   border-radius: 5px;
@@ -67,11 +65,11 @@ li {
 }
 
 li:hover {
-  background-color: #efe6e4;
+  background-color: #f5f5f5;
 }
 
 li.expanded {
-  background-color: #f9f0ee;
+  background-color: #f0f0f0;
 }
 
 .entry-header {
@@ -84,7 +82,7 @@ li.expanded {
 .entry-content {
   margin-top: 10px;
   padding: 10px;
-  background-color: #fffaf9;
+  background-color: #fafafa;
   border-radius: 5px;
   text-align: left;
   white-space: pre-wrap;
@@ -114,11 +112,12 @@ li.expanded {
 input[type="text"],
 input[type="date"] {
   padding: 10px;
-  width: calc(100% - 20px);
+  width: 100%;
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 input[type="date"] {
@@ -131,12 +130,16 @@ input[type="date"] {
   justify-content: center;
   margin-bottom: 10px;
   gap: 5px;
+  flex-wrap: wrap;
 }
 
 .emotion-selector label {
   font-size: 14px;
   color: #0a1e54;
   margin-right: 5px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .emotion-btn {
@@ -145,7 +148,7 @@ input[type="date"] {
   font-size: 20px;
   padding: 5px;
   border: 2px solid #ccc;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.2s;
@@ -158,7 +161,7 @@ input[type="date"] {
 
 .emotion-btn.selected {
   border-color: #0a1e54;
-  background-color: #cfc7c8;
+  background-color: #e0e5f2;
   transform: scale(1.15);
 }
 
@@ -169,18 +172,19 @@ input[type="date"] {
 
 textarea {
   padding: 10px;
-  width: calc(100% - 20px);
+  width: 100%;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid #ffffff;
+  border: 1px solid #ccc;
   font-size: 14px;
   font-family: 'Arial', sans-serif;
   resize: vertical;
+  box-sizing: border-box;
 }
 
 button {
   background-color: #0a1e54;
-  color: #f9f0ee;
+  color: white;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -194,6 +198,5 @@ button:hover {
 }
 
 .delete-btn:hover {
-  background-color: #943c3c;
-
+  background-color: #9f2525;
 }
