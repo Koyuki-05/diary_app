@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日記アプリ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="todo-app">
+    <h1>日記</h1>
+    <div class="controls">
+      <button id="sort-btn" class="sort-btn">新しい順 ▼</button>
+    </div>
+    <ul id="todo-list">
+      <!-- 日記エントリーがここに追加される -->
+    </ul>
+    <input type="date" id="entry-date" />
+    <div class="emotion-selector">
+      <label>気分：</label>
+      <button type="button" class="emotion-btn" data-emotion="😊">😊</button>
+      <button type="button" class="emotion-btn" data-emotion="😢">😢</button>
+      <button type="button" class="emotion-btn" data-emotion="😡">😡</button>
+      <button type="button" class="emotion-btn" data-emotion="😴">😴</button>
+      <button type="button" class="emotion-btn" data-emotion="😎">😎</button>
+      <button type="button" class="emotion-btn" data-emotion="🤔">🤔</button>
+    </div>
+    <input type="text" id="new-task" placeholder="タイトルを入力" />
+    <textarea id="new-content" placeholder="本文を入力" rows="5"></textarea>
+    <button id="add-task-btn">保存</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
